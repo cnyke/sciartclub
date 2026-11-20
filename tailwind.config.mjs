@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         'sans': ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
-        'silkscreen': ['Silkscreen', 'cursive'],
+        'majormono': ['"Major Mono Display"', 'monospace'],
       },
     },
   },
