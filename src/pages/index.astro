@@ -22,7 +22,49 @@ import haeckel from "../data/haeckel.json";
             </p>
         </div>
 
-        <!-- TODO: lead image (tcplot uses a collage here) -->
+        <!-- Haeckel slider -->
+        <div class="mb-12">
+            <div class="haeckel-slider overflow-hidden">
+                <div class="haeckel-track flex gap-4 w-max px-3">
+                    {[...haeckel, ...haeckel].map((h, i) => (
+                        <a href={h.link} target="_blank" rel="noopener noreferrer" class="haeckel-plate block shrink-0 rounded-md overflow-hidden" title={`${h.name} (Wikimedia Commons)`} aria-hidden={i >= haeckel.length ? "true" : undefined} tabindex={i >= haeckel.length ? -1 : undefined}>
+                            <img src={h.src} alt={i < haeckel.length ? `Ernst Haeckel, ${h.name}, a plate from Kunstformen der Natur` : ""} class="h-72 md:h-96 w-auto" />
+                        </a>
+                    ))}
+                </div>
+            </div>
+            <p class="text-sm text-gray-500 leading-relaxed mt-3 text-center max-w-3xl mx-auto">
+                Plates by <a href="https://en.wikipedia.org/wiki/Ernst_Haeckel" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Ernst Haeckel</a>, from <a href="https://en.wikipedia.org/wiki/Kunstformen_der_Natur" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline"><em>Kunstformen der Natur</em></a> (Art Forms in Nature, 1899 to 1904): radiolarians, jellyfish, diatoms, mosses, bats, and hummingbirds, drawn from the microscope and the field. Public domain; images via <a href="https://commons.wikimedia.org/wiki/Category:Kunstformen_der_Natur" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Wikimedia Commons</a>. Hover to pause, click any plate for its source.
+            </p>
+        </div>
+
+        <style>
+            .haeckel-slider {
+                -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+                        mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+                padding: 0.75rem 0;
+            }
+            .haeckel-track { animation: haeckel-slide 300s linear infinite; }
+            .haeckel-slider:hover .haeckel-track { animation-play-state: paused; }
+            .haeckel-plate {
+                transition: transform 500ms ease, box-shadow 500ms ease, filter 500ms ease;
+                box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+                filter: saturate(1.08);
+            }
+            .haeckel-plate:hover {
+                transform: scale(1.03);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+                filter: saturate(1.25) brightness(1.05);
+            }
+            @keyframes haeckel-slide {
+                from { transform: translateX(0); }
+                to { transform: translateX(-50%); }
+            }
+            @media (prefers-reduced-motion: reduce) {
+                .haeckel-track { animation: none; }
+                .haeckel-slider { overflow-x: auto; }
+            }
+        </style>
 
         <!-- About Section -->
         <div class="max-w-4xl mx-auto mb-12">
@@ -52,19 +94,5 @@ import haeckel from "../data/haeckel.json";
         </div>
 
         <!-- TODO: Instagram / Meetup links once the accounts exist -->
-
-        <!-- Haeckel wall -->
-        <div class="mt-16">
-            <div class="columns-2 sm:columns-3 lg:columns-4 gap-4">
-                {haeckel.map((h) => (
-                    <a href={h.link} target="_blank" rel="noopener noreferrer" class="block mb-4 break-inside-avoid rounded-lg overflow-hidden" title={h.name}>
-                        <img src={h.src} alt={`Ernst Haeckel, ${h.name}, a plate from Kunstformen der Natur`} loading="lazy" class="w-full h-auto" />
-                    </a>
-                ))}
-            </div>
-            <p class="text-sm text-gray-500 leading-relaxed mt-2 text-center">
-                Ernst Haeckel, <em>Kunstformen der Natur</em> (Art Forms in Nature), 1899 to 1904: one hundred plates of radiolarians, jellyfish, diatoms, mosses, bats, and hummingbirds, drawn from the microscope and the field. Public domain.
-            </p>
-        </div>
     </div>
 </Layout>
