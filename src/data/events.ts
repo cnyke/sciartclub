@@ -61,7 +61,7 @@ export const events: ClubEvent[] = [
     summary: "Design the science tattoo you'd get (no needles involved).",
     body: [
       "We'll get science tattoos together. April fool's! We'll spend the morning designing the science tattoo we'd get if we had to: a phylogenetic tree, a favorite molecule, the orbit of a comet, a single diatom.",
-      "I have a gorgeous book of science tattoos to bring for inspiration, <a href=\"https://carlzimmer.com/books/science-ink-tattoos-of-the-science-obsessed/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">Carl Zimmer's <em>Science Ink</em></a>. Bring reference images of anything you love. Temporary tattoo paper on hand if you want to wear your design home.",
+      "I have a gorgeous book of science tattoos to bring for inspiration, <a href=\"https://carlzimmer.com/books/science-ink-tattoos-of-the-science-obsessed/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">Carl Zimmer's <em>Science Ink</em></a>. Bring reference images of anything you love. I'll try to find temporary tattoo paper.",
     ],
     note: "April Fools' post (April 1st): announce that the club is getting science tattoos together, two days before the event.",
     image: {"src": "/images/cajal-purkinje-neuron.jpg", "alt": "An ink drawing of a single neuron with a dense, tree-like crown of branching dendrites", "caption": "Santiago Ramón y Cajal, a Purkinje neuron from the human cerebellum (c. 1900), ink. Cajal's neurons are a tattoo-parlor classic, and his line work is already flash-ready: one branching cell in black ink, nothing to shade. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Cajal_-_a_purkinje_neuron_from_the_human_cerebellum.jpg"}
