@@ -21,7 +21,7 @@ export const events: ClubEvent[] = [
     slug: "zine-night",
     title: "Sci Art Zines & Coffee",
     when: "Saturday, Jan 9 · 10:00 AM to 12:00 PM CST",
-    place: TBA,
+    place: { name: "FRGMNT Coffee, Mill District", address: "1011 Washington Ave S, Minneapolis, MN 55415" },
     summary: "Everyone makes a science zine; we bind them all into one club zine.",
     body: [
       "Everyone makes their own science zine about anything: a favorite organism, an experiment gone wrong, how a bridge stands up. Paper, markers, and glue provided.",
