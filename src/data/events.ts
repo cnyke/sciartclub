@@ -19,7 +19,7 @@ const TBA = { name: "Location to be announced", address: "Minneapolis / St. Paul
 export const events: ClubEvent[] = [
   {
     slug: "zine-night",
-    title: "Sci Art Zine Night",
+    title: "Sci Art Zine Morning",
     when: "Saturday, Jan 9 · 10:00 AM to 12:00 PM CST",
     place: TBA,
     summary: "Everyone makes a science zine; we bind them all into one club zine.",
@@ -124,7 +124,7 @@ export const events: ClubEvent[] = [
     body: [
       "We'll bring scissors, glue, and a pile of old science magazines, seed catalogs, star charts, and textbook plates, and spend the morning collaging the future: the cities, ecosystems, spacecraft, and kitchens we'd actually like to live with.",
       "Bring anything you'd like to cut up. Utopias, warnings, and very specific daydreams all welcome. At the end, we'll pin everything up and walk the wall together.",
-      "Like Sci Art Zine Night, we'll gather the collages into a Sci Art Club zine and order printed copies for anyone who wants one.",
+      "Like Sci Art Zine Morning, we'll gather the collages into a Sci Art Club zine and order printed copies for anyone who wants one.",
     ],
     image: {"src": "/images/guidice-1975-space-colony.jpg", "alt": "A painting of the inside of a space colony: green hills, a winding lake, and farmland curving up overhead, with sunlight pouring in through long window strips", "caption": "Rick Guidice, interior of a space colony (1975), painted for NASA Ames Research Center's summer study of space settlements. Lakes, farms, and villages curving up and over your head, sunlight streaming in through long windows: a future someone took seriously enough to paint every field. Public domain (NASA).", "link": "https://commons.wikimedia.org/wiki/File:Artist-_Rick_Guidice_interior_of_Torus_wheel_(L-5)_Space_Colonization_Module_(ARC-1975-AC75-1086).jpg"}
   },
