@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { events } from "../data/events";
+
+export function getStaticPaths() {
+    return events.map((e) => ({ params: { slug: e.slug }, props: { event: e } }));
+}
+
+const { event } = Astro.props;
+---
+
+<Layout title={`${event.title} | Sci Art Club`} description={event.summary}>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="max-w-4xl mx-auto mt-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                Upcoming: {event.title}
+            </h2>
+
+            <div class="mb-6 text-gray-700">
+                <p class="text-lg font-semibold text-gray-900">{event.when}</p>
+                {event.place && (
+                    <p class="flex items-start gap-2 mt-1">
+                        <svg class="w-5 h-5 mt-0.5 shrink-0 text-gray-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2c-3.866 0-7 3.07-7 6.857 0 4.34 4.686 9.86 6.412 11.74a.8.8 0 0 0 1.176 0C14.314 18.717 19 13.197 19 8.857 19 5.07 15.866 2 12 2Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span><span class="font-semibold text-gray-900">{event.place.name}</span><br />{event.place.address}</span>
+                    </p>
+                )}
+            </div>
+
+            {event.body.map((p) => (
+                <p class="text-lg text-gray-600 leading-relaxed mb-6">{p}</p>
+            ))}
+        </div>
+    </div>
+</Layout>

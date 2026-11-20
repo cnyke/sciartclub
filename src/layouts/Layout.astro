@@ -1,4 +1,6 @@
 ---
+import { events } from "../data/events";
+
 export interface Props {
   title: string;
   description?: string;
@@ -61,6 +63,50 @@ const socialImageURL = new URL(image, Astro.site);
               <span class="font-majormono">sci ARt club</span>
             </a>
           </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-8">
+            <div class="relative group">
+              <button class="text-gray-700 hover:text-blue-600 transition-colors font-medium flex items-center space-x-1">
+                <span>Upcoming Events</span>
+                <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="absolute right-0 top-full pt-2 w-64 hidden group-hover:block z-50">
+                <div class="rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                  <div class="py-1">
+                    {events.map((e) => (
+                      <a href={`/${e.slug}`} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors">
+                        {e.title}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600" aria-label="Menu">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+          <p class="text-gray-700 font-medium py-2">Upcoming Events</p>
+          <div class="pl-4 space-y-2">
+            {events.map((e) => (
+              <a href={`/${e.slug}`} class="block text-gray-700 hover:text-blue-600 transition-colors py-2">
+                {e.title}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </header>
@@ -79,5 +125,11 @@ const socialImageURL = new URL(image, Astro.site);
         </p>
       </div>
     </footer>
+
+    <script>
+      document.getElementById("mobile-menu-button")?.addEventListener("click", () => {
+        document.getElementById("mobile-menu")?.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
