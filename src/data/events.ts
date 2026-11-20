@@ -72,7 +72,7 @@ export const events: ClubEvent[] = [
     place: TBA,
     summary: "Design the science tattoo you'd get (no needles involved).",
     body: [
-      "No one is actually getting tattooed. We'll spend the morning designing the science tattoo we'd get if we had to: a phylogenetic tree, a favorite molecule, the orbit of a comet, a single diatom.",
+      "We'll get science tattoos together. April fool's! We'll spend the morning designing the science tattoo we'd get if we had to: a phylogenetic tree, a favorite molecule, the orbit of a comet, a single diatom.",
       "Bring reference images of anything you love. Temporary tattoo paper on hand if you want to wear your design home.",
     ],
     note: "April Fools' post (April 1st): announce that the club is getting science tattoos together.",
