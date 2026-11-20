@@ -40,7 +40,7 @@ const { event } = Astro.props;
             )}
 
             {event.body.map((p) => (
-                <p class="text-lg text-gray-600 leading-relaxed mb-6">{p}</p>
+                <p class="text-lg text-gray-600 leading-relaxed mb-6" set:html={p} />
             ))}
         </div>
     </div>
