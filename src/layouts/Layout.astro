@@ -7,7 +7,7 @@ export interface Props {
 
 const {
   title,
-  description = "sci art club: a community for people who make art about science, and science that looks like art.",
+  description = "Sci Art Club: a community for people who make art about science, and science that looks like art.",
   image = "/favicon.png",
 } = Astro.props;
 
@@ -33,7 +33,7 @@ const socialImageURL = new URL(image, Astro.site);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={socialImageURL} />
-    <meta property="og:site_name" content="sci art club" />
+    <meta property="og:site_name" content="Sci Art Club" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
