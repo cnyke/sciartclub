@@ -28,6 +28,17 @@ const { event } = Astro.props;
                 )}
             </div>
 
+            {event.image && (
+                <div class="flex justify-center mt-8 mb-10">
+                    <div class="max-w-2xl w-full">
+                        <a href={event.image.link} target="_blank" rel="noopener noreferrer" class="block rounded-lg overflow-hidden bg-white">
+                            <img src={event.image.src} alt={event.image.alt} class="w-full h-auto" />
+                        </a>
+                        <p class="text-sm text-gray-500 leading-relaxed mt-2" set:html={event.image.caption} />
+                    </div>
+                </div>
+            )}
+
             {event.body.map((p) => (
                 <p class="text-lg text-gray-600 leading-relaxed mb-6">{p}</p>
             ))}
