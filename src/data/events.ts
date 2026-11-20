@@ -17,25 +17,25 @@ const TBA = { name: "Location to be announced", address: "Minneapolis / St. Paul
 
 export const events: ClubEvent[] = [
   {
-    slug: "collaging-the-future",
-    title: "Collaging the Future",
+    slug: "zine-night",
+    title: "Zine Night",
     when: "Saturday, Jan 9 · 10:00 AM to 12:00 PM CST",
     place: TBA,
-    summary: "Start the year with scissors, glue, and old science magazines, and cut out the future you want to live in.",
+    summary: "Everyone makes a science zine; we bind them all into one club zine.",
     body: [
-      "Start the year with scissors and glue. We'll bring a pile of old science magazines, seed catalogs, star charts, and textbook plates, and spend the morning collaging the future: the cities, ecosystems, spacecraft, and kitchens we'd actually like to live with.",
-      "Bring anything you'd like to cut up. Utopias, warnings, and very specific daydreams all welcome. At the end, we'll pin everything up and walk the wall together.",
+      "Everyone makes their own science zine about anything: a favorite organism, an experiment gone wrong, how a bridge stands up. Paper, markers, and glue provided.",
+      "Afterward, we'll package every zine together into one big Sci Art Club zine, and order printed copies for anyone who wants one.",
     ],
   },
   {
-    slug: "byos",
-    title: "BYOS: Bring Your Own Sciartist",
+    slug: "science-fair",
+    title: "Science Fair",
     when: "Saturday, Feb 6 · 10:00 AM to 12:00 PM CST",
     place: TBA,
-    summary: "Bring a scientist-artist you love and give a short show-and-tell about their work.",
+    summary: "A grown-up science fair: bring a project, set up a table, and tour each other's work.",
     body: [
-      "Everyone brings one sciartist and presents on them for a few minutes: a botanical illustrator, a medical illustrator, a glassblower of marine invertebrates, a NASA concept painter, a microscopist with an eye, or the person on Instagram who embroiders mitochondria.",
-      "Show a few images, tell us why they stuck with you, and leave with a list of new people to follow. Listening without presenting is welcome too.",
+      "A science fair for grown-ups. Bring a project, made for the day or pulled from a drawer, and set it up on a table: a trifold poster, a specimen, a model, a data art piece, a question you've been chasing.",
+      "We'll walk the tables, ask questions, and hand out a few ribbons for fun.",
     ],
   },
   {
@@ -95,25 +95,25 @@ export const events: ClubEvent[] = [
     ],
   },
   {
-    slug: "zine-night",
-    title: "Zine Night",
+    slug: "byos",
+    title: "BYOS: Bring Your Own Sciartist",
     when: "Saturday, Aug 7 · 10:00 AM to 12:00 PM CDT",
     place: TBA,
-    summary: "Everyone makes a science zine; we bind them all into one club zine.",
+    summary: "Bring a scientist-artist you love and give a short show-and-tell about their work.",
     body: [
-      "Everyone makes their own science zine about anything: a favorite organism, an experiment gone wrong, how a bridge stands up. Paper, markers, and glue provided.",
-      "Afterward, we'll package every zine together into one big Sci Art Club zine, and order printed copies for anyone who wants one.",
+      "Everyone brings one sciartist and presents on them for a few minutes: a botanical illustrator, a medical illustrator, a glassblower of marine invertebrates, a NASA concept painter, a microscopist with an eye, or the person on Instagram who embroiders mitochondria.",
+      "Show a few images, tell us why they stuck with you, and leave with a list of new people to follow. Listening without presenting is welcome too.",
     ],
   },
   {
-    slug: "science-fair",
-    title: "Science Fair",
+    slug: "collaging-the-future",
+    title: "Collaging the Future",
     when: "Saturday, Sep 11 · 10:00 AM to 12:00 PM CDT",
     place: TBA,
-    summary: "A grown-up science fair: bring a project, set up a table, and tour each other's work.",
+    summary: "Scissors, glue, and old science magazines: cut out the future you want to live in.",
     body: [
-      "A science fair for grown-ups. Bring a project, made for the day or pulled from a drawer, and set it up on a table: a trifold poster, a specimen, a model, a data art piece, a question you've been chasing.",
-      "We'll walk the tables, ask questions, and hand out a few ribbons for fun.",
+      "We'll bring scissors, glue, and a pile of old science magazines, seed catalogs, star charts, and textbook plates, and spend the morning collaging the future: the cities, ecosystems, spacecraft, and kitchens we'd actually like to live with.",
+      "Bring anything you'd like to cut up. Utopias, warnings, and very specific daydreams all welcome. At the end, we'll pin everything up and walk the wall together.",
     ],
   },
 ];
