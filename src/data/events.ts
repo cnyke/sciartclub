@@ -54,29 +54,29 @@ export const events: ClubEvent[] = [
     image: {"src": "/images/audubon-1831-snowy-owl.jpg", "alt": "Two snowy owls perched on a branch against a dark night sky", "caption": "John James Audubon, <em>Snowy Owl</em>, plate 121 of <em>The Birds of America</em> (1831), engraved and hand-colored by Robert Havell. Audubon drew from specimens, which is exactly what the Bell's dioramas give us: birds that hold still. Snowy owls winter in Minnesota, so March is their month too. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:The_birds_of_America._(Livraison)_25,_Plate_CXXI,_Snowy_Owl,_Male_1._Female_2._-_estampe_-_Drawn_from_Nature_by_John_J._Audubon_;_Engraved,_printed_%26_Coloured_by_R._Havell_-_btv1b531439687.jpg"}
   },
   {
-    slug: "trash-and-watercolor",
-    title: "Trash Pickup and Watercolor",
-    when: "Saturday, Apr 3 · 10:00 AM to 12:00 PM CDT",
-    place: TBA,
-    summary: "For Earth Month: pick up trash together, then paint the place we just cleaned.",
-    body: [
-      "For Earth Month, we'll spend the first hour picking up trash, then sit down in the same spot and watercolor it.",
-      "Gloves and bags provided. Bring a watercolor set if you have one; we'll have a few to share. Dress for the weather.",
-    ],
-    image: {"src": "/images/durer-1503-large-turf.jpg", "alt": "A watercolor of a clump of meadow grasses, dandelions, and plantain leaves growing from muddy ground", "caption": "Albrecht Dürer, <em>The Large Piece of Turf</em> (1503), watercolor and gouache. A clump of ordinary weeds, dandelion, plantain, and meadow grass, painted with the attention most artists of his day saved for saints. The model for our April morning: look closely at a scrap of ground, then paint it. Albertina, Vienna. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_The_Large_Piece_of_Turf,_1503_-_Google_Art_Project.jpg"}
-  },
-  {
     slug: "science-tattoos",
     title: "Science Tattoos",
-    when: "Saturday, May 1 · 10:00 AM to 12:00 PM CDT",
+    when: "Saturday, Apr 3 · 10:00 AM to 12:00 PM CDT",
     place: TBA,
     summary: "Design the science tattoo you'd get (no needles involved).",
     body: [
       "We'll get science tattoos together. April fool's! We'll spend the morning designing the science tattoo we'd get if we had to: a phylogenetic tree, a favorite molecule, the orbit of a comet, a single diatom.",
       "Bring reference images of anything you love. Temporary tattoo paper on hand if you want to wear your design home.",
     ],
-    note: "April Fools' post (April 1st): announce that the club is getting science tattoos together.",
+    note: "April Fools' post (April 1st): announce that the club is getting science tattoos together, two days before the event.",
     image: {"src": "/images/cajal-purkinje-neuron.jpg", "alt": "An ink drawing of a single neuron with a dense, tree-like crown of branching dendrites", "caption": "Santiago Ramón y Cajal, a Purkinje neuron from the human cerebellum (c. 1900), ink. Cajal's neurons are a tattoo-parlor classic, and his line work is already flash-ready: one branching cell in black ink, nothing to shade. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Cajal_-_a_purkinje_neuron_from_the_human_cerebellum.jpg"}
+  },
+  {
+    slug: "trash-and-watercolor",
+    title: "Trash Pickup and Watercolor",
+    when: "Saturday, May 1 · 10:00 AM to 12:00 PM CDT",
+    place: TBA,
+    summary: "Pick up trash together, then paint the place we just cleaned.",
+    body: [
+      "We'll spend the first hour picking up trash, then sit down in the same spot and watercolor it.",
+      "Gloves and bags provided. Bring a watercolor set if you have one; we'll have a few to share. Dress for the weather.",
+    ],
+    image: {"src": "/images/durer-1503-large-turf.jpg", "alt": "A watercolor of a clump of meadow grasses, dandelions, and plantain leaves growing from muddy ground", "caption": "Albrecht Dürer, <em>The Large Piece of Turf</em> (1503), watercolor and gouache. A clump of ordinary weeds, dandelion, plantain, and meadow grass, painted with the attention most artists of his day saved for saints. The model for our April morning: look closely at a scrap of ground, then paint it. Albertina, Vienna. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_The_Large_Piece_of_Turf,_1503_-_Google_Art_Project.jpg"}
   },
   {
     slug: "microscope-party",
