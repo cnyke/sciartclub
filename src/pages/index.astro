@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import haeckel from "../data/haeckel.json";
 ---
 
 <Layout
@@ -51,5 +52,19 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- TODO: Instagram / Meetup links once the accounts exist -->
+
+        <!-- Haeckel wall -->
+        <div class="mt-16">
+            <div class="columns-2 sm:columns-3 lg:columns-4 gap-4">
+                {haeckel.map((h) => (
+                    <a href={h.link} target="_blank" rel="noopener noreferrer" class="block mb-4 break-inside-avoid rounded-lg overflow-hidden" title={h.name}>
+                        <img src={h.src} alt={`Ernst Haeckel, ${h.name}, a plate from Kunstformen der Natur`} loading="lazy" class="w-full h-auto" />
+                    </a>
+                ))}
+            </div>
+            <p class="text-sm text-gray-500 leading-relaxed mt-2 text-center">
+                Ernst Haeckel, <em>Kunstformen der Natur</em> (Art Forms in Nature), 1899 to 1904: one hundred plates of radiolarians, jellyfish, diatoms, mosses, bats, and hummingbirds, drawn from the microscope and the field. Public domain.
+            </p>
+        </div>
     </div>
 </Layout>
