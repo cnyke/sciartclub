@@ -76,7 +76,7 @@ export const events: ClubEvent[] = [
       "We'll spend the first hour picking up trash, then sit down in the same spot and watercolor it.",
       "Gloves and bags provided. Bring a watercolor set if you have one; we'll have a few to share. Dress for the weather.",
     ],
-    image: {"src": "/images/durer-1503-large-turf.jpg", "alt": "A watercolor of a clump of meadow grasses, dandelions, and plantain leaves growing from muddy ground", "caption": "Albrecht Dürer, <em>The Large Piece of Turf</em> (1503), watercolor and gouache. A clump of ordinary weeds, dandelion, plantain, and meadow grass, painted with the attention most artists of his day saved for saints. The model for our April morning: look closely at a scrap of ground, then paint it. Albertina, Vienna. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_The_Large_Piece_of_Turf,_1503_-_Google_Art_Project.jpg"}
+    image: {"src": "/images/durer-1503-large-turf.jpg", "alt": "A watercolor of a clump of meadow grasses, dandelions, and plantain leaves growing from muddy ground", "caption": "Albrecht Dürer, <em>The Large Piece of Turf</em> (1503), watercolor and gouache. A clump of ordinary weeds, dandelion, plantain, and meadow grass, painted with the attention most artists of his day saved for saints. The model for our May morning: look closely at a scrap of ground, then paint it. Albertina, Vienna. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_The_Large_Piece_of_Turf,_1503_-_Google_Art_Project.jpg"}
   },
   {
     slug: "microscope-party",
