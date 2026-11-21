@@ -7,7 +7,7 @@ export interface ClubEvent {
   slug: string;
   title: string;
   when: string;
-  place?: { name: string; address: string };
+  place?: { name: string; address: string; url?: string };
   summary: string;
   body: string[];
   note?: string;
@@ -45,7 +45,7 @@ export const events: ClubEvent[] = [
     slug: "drawing-at-the-bell",
     title: "Drawing at the Bell Museum",
     when: "Saturday, Mar 6 · 10:00 AM to 12:00 PM CST",
-    place: { name: "Bell Museum", address: "2088 Larpenteur Ave W · Saint Paul, MN" },
+    place: { name: "Bell Museum", address: "2088 Larpenteur Ave W · Saint Paul, MN", url: "https://www.bellmuseum.umn.edu/" },
     summary: "Sketch the dioramas and specimens at the Bell Museum together.",
     body: [
       "Bring a sketchbook and something to draw with. We'll spread out among the Bell Museum's dioramas and specimens and draw for the morning, then regroup to look at each other's pages.",
@@ -82,10 +82,10 @@ export const events: ClubEvent[] = [
     slug: "microscope-party",
     title: "Microscope Party",
     when: "Saturday, Jun 5 · 10:00 AM to 12:00 PM CDT",
-    place: { name: "Bde Maka Ska", address: "Minneapolis, MN" },
+    place: { name: "Wheel Fun Rentals, Bde Maka Ska", address: "3000 E Bde Maka Ska Pkwy · Minneapolis, MN", url: "https://wheelfunrentals.com/mn/minneapolis/bde-maka-ska" },
     summary: "Kayak Bde Maka Ska, fill vials with lake water, then see what's living in it under the microscope.",
     body: [
-      "We'll meet at Bde Maka Ska, rent kayaks, and paddle out to sample the lake. Vials are provided: fill a few from different spots, like open water, the weedy shallows, and near the docks.",
+      "We'll meet at Wheel Fun Rentals on Bde Maka Ska, rent kayaks, and paddle out to sample the lake. Vials are provided: fill a few from different spots, like open water, the weedy shallows, and near the docks.",
       "Back on shore, we'll put drops under the microscope (also provided) and see what turns up: algae, rotifers, water fleas, and whatever else is swimming around. Bring a sketchbook if you want to draw what you find.",
       "Kayak rental is separate, paid at the lake. Dress to get a little wet.",
     ],
@@ -95,7 +95,7 @@ export const events: ClubEvent[] = [
     slug: "science-museum",
     title: "Field Trip to the Science Museum",
     when: "Saturday, Jul 10 · 10:00 AM to 12:00 PM CDT",
-    place: { name: "Science Museum of Minnesota", address: "120 W Kellogg Blvd · Saint Paul, MN" },
+    place: { name: "Science Museum of Minnesota", address: "120 W Kellogg Blvd · Saint Paul, MN", url: "https://www.smm.org/" },
     summary: "A summer field trip to the Science Museum of Minnesota, sketchbooks in hand.",
     body: [
       "A summer field trip. We'll meet at the entrance, wander the exhibits with sketchbooks, and meet up at the end to share what caught our eye.",

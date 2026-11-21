@@ -23,7 +23,7 @@ const { event } = Astro.props;
                         <svg class="w-5 h-5 mt-0.5 shrink-0 text-gray-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path fill-rule="evenodd" d="M12 2c-3.866 0-7 3.07-7 6.857 0 4.34 4.686 9.86 6.412 11.74a.8.8 0 0 0 1.176 0C14.314 18.717 19 13.197 19 8.857 19 5.07 15.866 2 12 2Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z" clip-rule="evenodd"></path>
                         </svg>
-                        <span><span class="font-semibold text-gray-900">{event.place.name}</span><br />{event.place.address}</span>
+                        <span>{event.place.url ? (<a href={event.place.url} target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-600 hover:underline">{event.place.name}</a>) : (<span class="font-semibold text-gray-900">{event.place.name}</span>)}<br />{event.place.address}</span>
                     </p>
                 )}
             </div>
