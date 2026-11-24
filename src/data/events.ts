@@ -1,5 +1,5 @@
 // Sci Art Club events, one a month (Dec 2026 through Dec 2027).
-// Exception: August 2027 has two (BYOS + Fungi Appreciation, a Sunday to keep clear of tcplot).
+// Exception: August 2027 has two (BYOS Aug 7 + Fungi Appreciation Aug 14).
 // Scheduled on first Saturdays to stay clear of tcplot, which meets on
 // 2nd–4th Saturdays (Jan 16, 2027 is tcplot's Charts & Color).
 // Holiday weekends (New Year's, July 4th, Labor Day) shift to the 2nd Saturday.
@@ -132,7 +132,7 @@ export const events: ClubEvent[] = [
   {
     slug: "fungi-appreciation",
     title: "Fungi Appreciation",
-    when: "Sunday, Aug 22, 2027 · 10:00 AM to 12:00 PM CDT",
+    when: "Saturday, Aug 14, 2027 · 10:00 AM to 12:00 PM CDT",
     place: { name: "Lake Harriet Bandshell", address: "4135 W Lake Harriet Pkwy · Minneapolis, MN 55409" },
     summary: "Head into the woods to find and draw mushrooms, shelf fungi, and slime molds.",
     body: [
