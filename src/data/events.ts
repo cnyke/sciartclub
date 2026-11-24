@@ -84,7 +84,7 @@ export const events: ClubEvent[] = [
     slug: "trash-and-watercolor",
     title: "Trash Pickup and Watercolor",
     when: "Saturday, May 1, 2027 · 10:00 AM to 12:00 PM CDT",
-    place: TBA,
+    place: { name: "Lake of the Isles", address: "Lake of the Isles Pkwy · Minneapolis, MN" },
     summary: "Pick up trash together, then paint the place we just cleaned.",
     body: [
       "We'll spend the first hour picking up trash, then sit down in the same spot and watercolor it.",
@@ -133,11 +133,11 @@ export const events: ClubEvent[] = [
     slug: "fungi-appreciation",
     title: "Fungi Appreciation",
     when: "Sunday, Aug 22, 2027 · 10:00 AM to 12:00 PM CDT",
-    place: TBA,
+    place: { name: "Lake Harriet Bandshell", address: "4135 W Lake Harriet Pkwy · Minneapolis, MN 55409" },
     summary: "Head into the woods to find and draw mushrooms, shelf fungi, and slime molds.",
     body: [
-      "Late summer is mushroom season. We'll walk slowly through the woods looking for fungi: mushrooms in the leaf litter, shelf fungi on fallen logs, and maybe a slime mold or two. Then we'll sit down and draw what we found.",
-      "Bring a sketchbook, and a hand lens if you have one. Look, draw, and photograph, but leave everything where it grows. Dress for bugs and mud.",
+      "Late summer is mushroom season. We'll meet at the Lake Harriet Bandshell and walk slowly through the Thomas Sadler Roberts Bird Sanctuary next door, looking for fungi: mushrooms in the leaf litter, shelf fungi on fallen logs, and maybe a slime mold or two. Then we'll sit down and draw what we found.",
+      "Bring a sketchbook, and a hand lens if you have one. Look, draw, and photograph, but leave everything where it grows, and stay on the sanctuary's paths and boardwalk. Dress for bugs and mud.",
     ],
     image: {"src": "/images/haeckel-1904-basimycetes.jpg", "alt": "A plate of mushrooms on a black background, led by a veiled stinkhorn with a lacy white net hanging from its cap", "caption": "Ernst Haeckel, <em>Basimycetes</em>, from <em>Kunstformen der Natur</em> (1904). Stinkhorns, earthstars, and the veiled lady, whose lace skirt unfurls in a few hours and is gone by the next day. Fungi reward the people who walk slowly. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Haeckel_Basimycetes.jpg"},
   },
