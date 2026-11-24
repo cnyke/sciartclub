@@ -1,4 +1,4 @@
-// Sci Art Club events, one a month (Dec 2026 through Dec 2027).
+// Sci Art Club events, one a month (Dec 2026 through Oct 2027).
 // Exception: August 2027 has two (BYOS Aug 7 + Fungi Appreciation Aug 14).
 // Scheduled on first Saturdays to stay clear of tcplot, which meets on
 // 2nd–4th Saturdays (Jan 16, 2027 is tcplot's Charts & Color).
@@ -167,6 +167,10 @@ export const events: ClubEvent[] = [
     ],
     image: {"src": "/images/kircher-1650-birdsong.jpg", "alt": "An engraving of a rooster, hen, cuckoo, quail, and parrot, each with its call written above it on a musical staff", "caption": "Athanasius Kircher, birdsong set down in musical notation, from <em>Musurgia universalis</em> (1650). Kircher listened to a rooster, a hen calling her chicks, a cuckoo, a quail, and a parrot, and wrote what he heard as notes on a staff: music made from careful observation. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Kircher-musurgia-bird-song_(cropped).jpg"},
   },
+];
+
+// Parked: not posted yet (her call 11.23.26). Not rendered anywhere; move back into `events` to publish.
+export const parkedEvents: ClubEvent[] = [
   {
     slug: "specimen-swap",
     title: "Specimen Swap",
