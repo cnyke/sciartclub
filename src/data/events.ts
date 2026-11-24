@@ -16,6 +16,7 @@ export interface ClubEvent {
 }
 
 const TBA = { name: "Location to be announced", address: "Minneapolis / St. Paul" };
+const FUS = { name: "First Unitarian Society", address: "900 Mount Curve Ave · Minneapolis, MN 55403", url: "https://www.firstunitarian.org/" };
 const FRGMNT = { name: "FRGMNT Coffee, Mill District", address: "1011 Washington Ave S, Minneapolis, MN 55415" };
 
 export const events: ClubEvent[] = [
@@ -47,7 +48,7 @@ export const events: ClubEvent[] = [
     slug: "science-fair",
     title: "Science Fair",
     when: "Saturday, Feb 6, 2027 · 10:00 AM to 12:00 PM CST",
-    place: TBA,
+    place: FUS,
     summary: "A grown-up science fair: bring a project, set up a table, and tour each other's work.",
     body: [
       "A science fair for grown-ups. Bring a project, made for the day or pulled from a drawer, and set it up on a table: a trifold poster, a specimen, a model, a data art piece, a question you've been chasing.",
@@ -158,7 +159,7 @@ export const events: ClubEvent[] = [
     slug: "musical-science",
     title: "Musical Science",
     when: "Saturday, Oct 2, 2027 · 10:00 AM to 12:00 PM CDT",
-    place: TBA,
+    place: FUS,
     summary: "Make music about science, data, or something you've observed. Bring an instrument!",
     body: [
       "We'll spend the morning turning science into sound: play a dataset as a melody, turn a bird call or a tide chart into a rhythm, write a song about a cell, or improvise to a time-lapse of the night sky.",
