@@ -82,7 +82,7 @@ export const events: ClubEvent[] = [
   },
   {
     slug: "trash-and-watercolor",
-    title: "Trash Pickup and Watercolor",
+    title: "Trash Pickup & Watercolor",
     when: "Saturday, May 1, 2027 · 10:00 AM to 12:00 PM CDT",
     place: { name: "Lake of the Isles", address: "Lake of the Isles Pkwy · Minneapolis, MN" },
     summary: "Pick up trash together, then paint the place we just cleaned.",
