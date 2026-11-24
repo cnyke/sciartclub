@@ -1,8 +1,8 @@
-// Sci Art Club events, one a month (Dec 2026 through Oct 2027).
-// Exception: August 2027 has two (BYOS Aug 7 + Fungi Appreciation Aug 14).
-// Scheduled on first Saturdays to stay clear of tcplot, which meets on
-// 2nd–4th Saturdays (Jan 16, 2027 is tcplot's Charts & Color).
-// Holiday weekends (New Year's, July 4th, Labor Day) shift to the 2nd Saturday.
+// Sci Art Club events, one a month (Dec 2026 through Oct 2027), Saturdays 10 to noon.
+// She works 7am to 7pm every other weekend starting Nov 28 to 29, 2026, so events go on her
+// OFF Saturdays (Dec 5, Dec 19, Jan 2, Jan 16, Jan 30, ...). tcplot meets 2nd to 4th Saturdays;
+// on known tcplot dates (Jan 16, 2027 = Charts & Color) avoid overlap.
+// Exception: August 2027 has two (Fungi Appreciation Aug 14 + BYOS Aug 28).
 
 export interface ClubEvent {
   slug: string;
@@ -35,7 +35,7 @@ export const events: ClubEvent[] = [
   {
     slug: "zine-night",
     title: "Sci Art Zines & Coffee",
-    when: "Saturday, Jan 9, 2027 · 10:00 AM to 12:00 PM CST",
+    when: "Saturday, Jan 30, 2027 · 10:00 AM to 12:00 PM CST",
     place: FRGMNT,
     summary: "Everyone makes a science zine; we bind them all into one club zine.",
     body: [
@@ -47,7 +47,7 @@ export const events: ClubEvent[] = [
   {
     slug: "science-fair",
     title: "Science Fair",
-    when: "Saturday, Feb 6, 2027 · 10:00 AM to 12:00 PM CST",
+    when: "Saturday, Feb 13, 2027 · 10:00 AM to 12:00 PM CST",
     place: FUS,
     summary: "A grown-up science fair: bring a project, set up a table, and tour each other's work.",
     body: [
@@ -59,7 +59,7 @@ export const events: ClubEvent[] = [
   {
     slug: "drawing-at-the-bell",
     title: "Drawing at the Bell Museum",
-    when: "Saturday, Mar 6, 2027 · 10:00 AM to 12:00 PM CST",
+    when: "Saturday, Mar 13, 2027 · 10:00 AM to 12:00 PM CST",
     place: { name: "Bell Museum", address: "2088 Larpenteur Ave W · Saint Paul, MN", url: "https://www.bellmuseum.umn.edu/" },
     summary: "Sketch the dioramas and specimens at the Bell Museum together.",
     body: [
@@ -71,20 +71,20 @@ export const events: ClubEvent[] = [
   {
     slug: "science-tattoos",
     title: "Science Tattoos",
-    when: "Saturday, Apr 3, 2027 · 10:00 AM to 12:00 PM CDT",
+    when: "Saturday, Apr 10, 2027 · 10:00 AM to 12:00 PM CDT",
     place: FRGMNT,
     summary: "Design the science tattoo you'd get (no needles involved).",
     body: [
       "We'll get science tattoos together. April fool's! We'll spend the morning designing the science tattoo we'd get if we had to: a phylogenetic tree, a favorite molecule, the orbit of a comet, a single diatom.",
       "I have a gorgeous book of science tattoos to bring for inspiration, <a href=\"https://carlzimmer.com/books/science-ink-tattoos-of-the-science-obsessed/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">Carl Zimmer's <em>Science Ink</em></a>. Bring reference images of anything you love. I'll try to find temporary tattoo paper.",
     ],
-    note: "April Fools' post (April 1st): announce that the club is getting science tattoos together, two days before the event.",
+    note: "April Fools' post (April 1st): announce that the club is getting science tattoos together, nine days before the event (Apr 10).",
     image: {"src": "/images/cajal-purkinje-neuron.jpg", "alt": "An ink drawing of a single neuron with a dense, tree-like crown of branching dendrites", "caption": "Santiago Ramón y Cajal, a Purkinje neuron from the human cerebellum (c. 1900), ink. Cajal's neurons are a tattoo-parlor classic, and his line work is already flash-ready: one branching cell in black ink, nothing to shade. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Cajal_-_a_purkinje_neuron_from_the_human_cerebellum.jpg"}
   },
   {
     slug: "trash-and-watercolor",
     title: "Trash Pickup & Watercolor",
-    when: "Saturday, May 1, 2027 · 10:00 AM to 12:00 PM CDT",
+    when: "Saturday, May 8, 2027 · 10:00 AM to 12:00 PM CDT",
     place: { name: "Lake of the Isles", address: "Lake of the Isles Pkwy · Minneapolis, MN" },
     summary: "Pick up trash together, then paint the place we just cleaned.",
     body: [
@@ -109,7 +109,7 @@ export const events: ClubEvent[] = [
   {
     slug: "science-museum",
     title: "Field Trip to the Science Museum",
-    when: "Saturday, Jul 10, 2027 · 10:00 AM to 12:00 PM CDT",
+    when: "Saturday, Jul 31, 2027 · 10:00 AM to 12:00 PM CDT",
     place: { name: "Science Museum of Minnesota", address: "120 W Kellogg Blvd · Saint Paul, MN", url: "https://www.smm.org/" },
     summary: "A summer field trip to the Science Museum of Minnesota, sketchbooks in hand.",
     body: [
@@ -117,18 +117,6 @@ export const events: ClubEvent[] = [
       "Museum admission is separate; check the Science Museum's site for current hours and tickets.",
     ],
     image: {"src": "/images/imperato-1599-museum.jpg", "alt": "An engraving of a vaulted room lined with cabinets of specimens, with stuffed animals and a crocodile on the ceiling, and visitors looking on", "caption": "Ferrante Imperato's museum in Naples, from his <em>Dell'Historia Naturale</em> (1599), the earliest known picture of a natural history collection. Shells, specimens, and a crocodile on the ceiling, with visitors pointing at it all: the great-great-grandparent of the Science Museum of Minnesota. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:RitrattoMuseoFerranteImperato.jpg"}
-  },
-  {
-    slug: "byos",
-    title: "BYOS: Bring Your Own Sciartist",
-    when: "Saturday, Aug 7, 2027 · 10:00 AM to 12:00 PM CDT",
-    place: FRGMNT,
-    summary: "Bring a scientist-artist you love and give a short show-and-tell about their work.",
-    body: [
-      "Everyone brings one sciartist and presents on them for a few minutes: a botanical illustrator, a medical illustrator, a glassblower of marine invertebrates, a NASA concept painter, a microscopist with an eye, or the person on Instagram who embroiders mitochondria.",
-      "Show a few images, tell us why they stuck with you, and leave with a list of new people to follow. Listening without presenting is welcome too.",
-    ],
-    image: {"src": "/images/albinus-wandelaar-1749-clara.jpg", "alt": "An engraving of a human skeleton standing in front of a rhinoceros in a garden", "caption": "Jan Wandelaar, skeleton with Clara the rhinoceros, engraved by Charles Grignion for Bernhard Siegfried Albinus's <em>Tabulae sceleti et musculorum corporis humani</em> (1747; this plate from the 1749 English edition). Albinus was the anatomist, but the book is beautiful because of Wandelaar, the artist he hired, who put Europe's most famous rhinoceros behind the skeleton. The kind of sciartist we hope you'll bring. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Clara_Rhinoceros_from_Bernhard_Siegfried_Albinus_TAB_IV_-_1749.jpg"}
   },
   {
     slug: "fungi-appreciation",
@@ -141,6 +129,18 @@ export const events: ClubEvent[] = [
       "Bring a sketchbook, and a hand lens if you have one. Look, draw, and photograph, but leave everything where it grows, and stay on the sanctuary's paths and boardwalk. Dress for bugs and mud.",
     ],
     image: {"src": "/images/haeckel-1904-basimycetes.jpg", "alt": "A plate of mushrooms on a black background, led by a veiled stinkhorn with a lacy white net hanging from its cap", "caption": "Ernst Haeckel, <em>Basimycetes</em>, from <em>Kunstformen der Natur</em> (1904). Stinkhorns, earthstars, and the veiled lady, whose lace skirt unfurls in a few hours and is gone by the next day. Fungi reward the people who walk slowly. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Haeckel_Basimycetes.jpg"},
+  },
+  {
+    slug: "byos",
+    title: "BYOS: Bring Your Own Sciartist",
+    when: "Saturday, Aug 28, 2027 · 10:00 AM to 12:00 PM CDT",
+    place: FRGMNT,
+    summary: "Bring a scientist-artist you love and give a short show-and-tell about their work.",
+    body: [
+      "Everyone brings one sciartist and presents on them for a few minutes: a botanical illustrator, a medical illustrator, a glassblower of marine invertebrates, a NASA concept painter, a microscopist with an eye, or the person on Instagram who embroiders mitochondria.",
+      "Show a few images, tell us why they stuck with you, and leave with a list of new people to follow. Listening without presenting is welcome too.",
+    ],
+    image: {"src": "/images/albinus-wandelaar-1749-clara.jpg", "alt": "An engraving of a human skeleton standing in front of a rhinoceros in a garden", "caption": "Jan Wandelaar, skeleton with Clara the rhinoceros, engraved by Charles Grignion for Bernhard Siegfried Albinus's <em>Tabulae sceleti et musculorum corporis humani</em> (1747; this plate from the 1749 English edition). Albinus was the anatomist, but the book is beautiful because of Wandelaar, the artist he hired, who put Europe's most famous rhinoceros behind the skeleton. The kind of sciartist we hope you'll bring. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Clara_Rhinoceros_from_Bernhard_Siegfried_Albinus_TAB_IV_-_1749.jpg"}
   },
   {
     slug: "collaging-the-future",
@@ -158,7 +158,7 @@ export const events: ClubEvent[] = [
   {
     slug: "musical-science",
     title: "Musical Science",
-    when: "Saturday, Oct 2, 2027 · 10:00 AM to 12:00 PM CDT",
+    when: "Saturday, Oct 23, 2027 · 10:00 AM to 12:00 PM CDT",
     place: FUS,
     summary: "Make music about science, data, or something you've observed. Bring an instrument!",
     body: [
