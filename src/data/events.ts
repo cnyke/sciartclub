@@ -16,6 +16,7 @@ export interface ClubEvent {
 }
 
 const TBA = { name: "Location to be announced", address: "Minneapolis / St. Paul" };
+const FRGMNT = { name: "FRGMNT Coffee, Mill District", address: "1011 Washington Ave S, Minneapolis, MN 55415" };
 
 export const events: ClubEvent[] = [
   {
@@ -34,7 +35,7 @@ export const events: ClubEvent[] = [
     slug: "zine-night",
     title: "Sci Art Zines & Coffee",
     when: "Saturday, Jan 9, 2027 · 10:00 AM to 12:00 PM CST",
-    place: { name: "FRGMNT Coffee, Mill District", address: "1011 Washington Ave S, Minneapolis, MN 55415" },
+    place: FRGMNT,
     summary: "Everyone makes a science zine; we bind them all into one club zine.",
     body: [
       "Everyone makes their own science zine about anything: a favorite organism, an experiment gone wrong, how a bridge stands up. Paper, markers, and glue provided.",
@@ -70,7 +71,7 @@ export const events: ClubEvent[] = [
     slug: "science-tattoos",
     title: "Science Tattoos",
     when: "Saturday, Apr 3, 2027 · 10:00 AM to 12:00 PM CDT",
-    place: TBA,
+    place: FRGMNT,
     summary: "Design the science tattoo you'd get (no needles involved).",
     body: [
       "We'll get science tattoos together. April fool's! We'll spend the morning designing the science tattoo we'd get if we had to: a phylogenetic tree, a favorite molecule, the orbit of a comet, a single diatom.",
@@ -120,7 +121,7 @@ export const events: ClubEvent[] = [
     slug: "byos",
     title: "BYOS: Bring Your Own Sciartist",
     when: "Saturday, Aug 7, 2027 · 10:00 AM to 12:00 PM CDT",
-    place: TBA,
+    place: FRGMNT,
     summary: "Bring a scientist-artist you love and give a short show-and-tell about their work.",
     body: [
       "Everyone brings one sciartist and presents on them for a few minutes: a botanical illustrator, a medical illustrator, a glassblower of marine invertebrates, a NASA concept painter, a microscopist with an eye, or the person on Instagram who embroiders mitochondria.",
@@ -144,7 +145,7 @@ export const events: ClubEvent[] = [
     slug: "collaging-the-future",
     title: "Collaging the Future",
     when: "Saturday, Sep 11, 2027 · 10:00 AM to 12:00 PM CDT",
-    place: TBA,
+    place: FRGMNT,
     summary: "Scissors, glue, and old science magazines: cut out the future you want to live in.",
     body: [
       "We'll bring scissors, glue, and a pile of old science magazines, seed catalogs, star charts, and textbook plates, and spend the morning collaging the future: the cities, ecosystems, spacecraft, and kitchens we'd actually like to live with.",
@@ -157,7 +158,7 @@ export const events: ClubEvent[] = [
     slug: "da-vinci-notebook-pages",
     title: "Da Vinci Notebook Pages",
     when: "Saturday, Oct 2, 2027 · 10:00 AM to 12:00 PM CDT",
-    place: TBA,
+    place: FRGMNT,
     summary: "Fill a notebook spread the way Leonardo did: drawings, cutaways, arrows, and questions in the margins.",
     body: [
       "Leonardo's notebooks hold everything at once: the flow of water, the muscles of the arm, machines that couldn't be built yet, shopping lists, and questions to himself, often written backward.",
@@ -169,7 +170,7 @@ export const events: ClubEvent[] = [
     slug: "specimen-swap",
     title: "Specimen Swap",
     when: "Saturday, Dec 4, 2027 · 10:00 AM to 12:00 PM CST",
-    place: TBA,
+    place: FRGMNT,
     summary: "Bring an object from nature, trade it for someone else's, then draw it and write its museum label.",
     body: [
       "Bring one object from nature to give away: a shell, a seed pod, a rock, a pinecone, an empty wasp nest. We'll pile them on a table, and everyone goes home with someone else's.",
