@@ -20,16 +20,16 @@ const FRGMNT = { name: "FRGMNT Coffee, Mill District", address: "1011 Washington
 
 export const events: ClubEvent[] = [
   {
-    slug: "musical-science",
-    title: "Musical Science",
+    slug: "da-vinci-notebook-pages",
+    title: "Da Vinci Notebook Pages",
     when: "Saturday, Dec 5, 2026 · 10:00 AM to 12:00 PM CST",
-    place: TBA,
-    summary: "Make music about science, data, or something you've observed. Bring an instrument!",
+    place: FRGMNT,
+    summary: "Fill a notebook spread the way Leonardo did: drawings, cutaways, arrows, and questions in the margins.",
     body: [
-      "We'll spend the morning turning science into sound: play a dataset as a melody, turn a bird call or a tide chart into a rhythm, write a song about a cell, or improvise to a time-lapse of the night sky.",
-      "Bring an instrument if you have one. No instrument? Pots, pans, your computer or your voice will work. At the end, we'll play for each other.",
+      "Leonardo's notebooks hold everything at once: the flow of water, the muscles of the arm, machines that couldn't be built yet, shopping lists, and questions to himself, often written backward.",
+      "Pick one thing you're curious about, like a bicycle, a heron's wing, or an eddy in the river, and fill a two-page spread with it: drawings from different angles, cutaways, measurements, and the questions you'd still like answered. Mirror writing optional.",
     ],
-    image: {"src": "/images/kircher-1650-birdsong.jpg", "alt": "An engraving of a rooster, hen, cuckoo, quail, and parrot, each with its call written above it on a musical staff", "caption": "Athanasius Kircher, birdsong set down in musical notation, from <em>Musurgia universalis</em> (1650). Kircher listened to a rooster, a hen calling her chicks, a cuckoo, a quail, and a parrot, and wrote what he heard as notes on a staff: music made from careful observation. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Kircher-musurgia-bird-song_(cropped).jpg"},
+    image: {"src": "/images/leonardo-c1510-water-old-man.jpg", "alt": "A pen-and-ink notebook page with a seated old man on the left and studies of swirling water on the right, above lines of mirror writing", "caption": "Leonardo da Vinci, a seated old man and studies of water (c. 1510 to 1513), pen and ink. A thinker on one half of the page and eddies of water on the other, with notes in his backward mirror script underneath: the whole notebook habit on one sheet. Royal Collection Trust, RCIN 912579. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_RCIN_912579,_Recto_Studies_of_water,_and_a_seated_old_man.jpg"},
   },
   {
     slug: "zine-night",
@@ -155,16 +155,16 @@ export const events: ClubEvent[] = [
     image: {"src": "/images/guidice-1975-space-colony.jpg", "alt": "A painting of the inside of a space colony: green hills, a winding lake, and farmland curving up overhead, with sunlight pouring in through long window strips", "caption": "Rick Guidice, interior of a space colony (1975), painted for NASA Ames Research Center's summer study of space settlements. Lakes, farms, and villages curving up and over your head, sunlight streaming in through long windows: a future someone took seriously enough to paint every field. Public domain (NASA).", "link": "https://commons.wikimedia.org/wiki/File:Artist-_Rick_Guidice_interior_of_Torus_wheel_(L-5)_Space_Colonization_Module_(ARC-1975-AC75-1086).jpg"}
   },
   {
-    slug: "da-vinci-notebook-pages",
-    title: "Da Vinci Notebook Pages",
+    slug: "musical-science",
+    title: "Musical Science",
     when: "Saturday, Oct 2, 2027 · 10:00 AM to 12:00 PM CDT",
-    place: FRGMNT,
-    summary: "Fill a notebook spread the way Leonardo did: drawings, cutaways, arrows, and questions in the margins.",
+    place: TBA,
+    summary: "Make music about science, data, or something you've observed. Bring an instrument!",
     body: [
-      "Leonardo's notebooks hold everything at once: the flow of water, the muscles of the arm, machines that couldn't be built yet, shopping lists, and questions to himself, often written backward.",
-      "Pick one thing you're curious about, like a bicycle, a heron's wing, or an eddy in the river, and fill a two-page spread with it: drawings from different angles, cutaways, measurements, and the questions you'd still like answered. Mirror writing optional.",
+      "We'll spend the morning turning science into sound: play a dataset as a melody, turn a bird call or a tide chart into a rhythm, write a song about a cell, or improvise to a time-lapse of the night sky.",
+      "Bring an instrument if you have one. No instrument? Pots, pans, your computer or your voice will work. At the end, we'll play for each other.",
     ],
-    image: {"src": "/images/leonardo-c1510-water-old-man.jpg", "alt": "A pen-and-ink notebook page with a seated old man on the left and studies of swirling water on the right, above lines of mirror writing", "caption": "Leonardo da Vinci, a seated old man and studies of water (c. 1510 to 1513), pen and ink. A thinker on one half of the page and eddies of water on the other, with notes in his backward mirror script underneath: the whole notebook habit on one sheet. Royal Collection Trust, RCIN 912579. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_RCIN_912579,_Recto_Studies_of_water,_and_a_seated_old_man.jpg"},
+    image: {"src": "/images/kircher-1650-birdsong.jpg", "alt": "An engraving of a rooster, hen, cuckoo, quail, and parrot, each with its call written above it on a musical staff", "caption": "Athanasius Kircher, birdsong set down in musical notation, from <em>Musurgia universalis</em> (1650). Kircher listened to a rooster, a hen calling her chicks, a cuckoo, a quail, and a parrot, and wrote what he heard as notes on a staff: music made from careful observation. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Kircher-musurgia-bird-song_(cropped).jpg"},
   },
   {
     slug: "specimen-swap",
