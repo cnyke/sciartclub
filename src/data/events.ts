@@ -26,7 +26,7 @@ export const events: ClubEvent[] = [
     summary: "Make music about science, data, or something you've observed. Bring an instrument!",
     body: [
       "We'll spend the morning turning science into sound: play a dataset as a melody, turn a bird call or a tide chart into a rhythm, write a song about a cell, or improvise to a time-lapse of the night sky.",
-      "Bring an instrument if you have one. No instrument? Pots, pans, and your voice all count. At the end, we'll play for each other.",
+      "Bring an instrument if you have one. No instrument? Pots, pans, your computer or your voice will work. At the end, we'll play for each other.",
     ],
     image: {"src": "/images/kircher-1650-birdsong.jpg", "alt": "An engraving of a rooster, hen, cuckoo, quail, and parrot, each with its call written above it on a musical staff", "caption": "Athanasius Kircher, birdsong set down in musical notation, from <em>Musurgia universalis</em> (1650). Kircher listened to a rooster, a hen calling her chicks, a cuckoo, a quail, and a parrot, and wrote what he heard as notes on a staff: music made from careful observation. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Kircher-musurgia-bird-song_(cropped).jpg"},
   },
