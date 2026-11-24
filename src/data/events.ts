@@ -1,4 +1,5 @@
-// Sci Art Club events, one a month.
+// Sci Art Club events, one a month (Dec 2026 through Dec 2027).
+// Exception: August 2027 has two (BYOS + Fungi Appreciation, a Sunday to keep clear of tcplot).
 // Scheduled on first Saturdays to stay clear of tcplot, which meets on
 // 2nd–4th Saturdays (Jan 16, 2027 is tcplot's Charts & Color).
 // Holiday weekends (New Year's, July 4th, Labor Day) shift to the 2nd Saturday.
@@ -18,9 +19,21 @@ const TBA = { name: "Location to be announced", address: "Minneapolis / St. Paul
 
 export const events: ClubEvent[] = [
   {
+    slug: "musical-science",
+    title: "Musical Science",
+    when: "Saturday, Dec 5, 2026 · 10:00 AM to 12:00 PM CST",
+    place: TBA,
+    summary: "Make music about science, data, or something you've observed. Bring an instrument!",
+    body: [
+      "We'll spend the morning turning science into sound: play a dataset as a melody, turn a bird call or a tide chart into a rhythm, write a song about a cell, or improvise to a time-lapse of the night sky.",
+      "Bring an instrument if you have one. No instrument? Pots, pans, and your voice all count. At the end, we'll play for each other.",
+    ],
+    image: {"src": "/images/kircher-1650-birdsong.jpg", "alt": "An engraving of a rooster, hen, cuckoo, quail, and parrot, each with its call written above it on a musical staff", "caption": "Athanasius Kircher, birdsong set down in musical notation, from <em>Musurgia universalis</em> (1650). Kircher listened to a rooster, a hen calling her chicks, a cuckoo, a quail, and a parrot, and wrote what he heard as notes on a staff: music made from careful observation. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Kircher-musurgia-bird-song_(cropped).jpg"},
+  },
+  {
     slug: "zine-night",
     title: "Sci Art Zines & Coffee",
-    when: "Saturday, Jan 9 · 10:00 AM to 12:00 PM CST",
+    when: "Saturday, Jan 9, 2027 · 10:00 AM to 12:00 PM CST",
     place: { name: "FRGMNT Coffee, Mill District", address: "1011 Washington Ave S, Minneapolis, MN 55415" },
     summary: "Everyone makes a science zine; we bind them all into one club zine.",
     body: [
@@ -32,7 +45,7 @@ export const events: ClubEvent[] = [
   {
     slug: "science-fair",
     title: "Science Fair",
-    when: "Saturday, Feb 6 · 10:00 AM to 12:00 PM CST",
+    when: "Saturday, Feb 6, 2027 · 10:00 AM to 12:00 PM CST",
     place: TBA,
     summary: "A grown-up science fair: bring a project, set up a table, and tour each other's work.",
     body: [
@@ -44,7 +57,7 @@ export const events: ClubEvent[] = [
   {
     slug: "drawing-at-the-bell",
     title: "Drawing at the Bell Museum",
-    when: "Saturday, Mar 6 · 10:00 AM to 12:00 PM CST",
+    when: "Saturday, Mar 6, 2027 · 10:00 AM to 12:00 PM CST",
     place: { name: "Bell Museum", address: "2088 Larpenteur Ave W · Saint Paul, MN", url: "https://www.bellmuseum.umn.edu/" },
     summary: "Sketch the dioramas and specimens at the Bell Museum together.",
     body: [
@@ -56,7 +69,7 @@ export const events: ClubEvent[] = [
   {
     slug: "science-tattoos",
     title: "Science Tattoos",
-    when: "Saturday, Apr 3 · 10:00 AM to 12:00 PM CDT",
+    when: "Saturday, Apr 3, 2027 · 10:00 AM to 12:00 PM CDT",
     place: TBA,
     summary: "Design the science tattoo you'd get (no needles involved).",
     body: [
@@ -69,7 +82,7 @@ export const events: ClubEvent[] = [
   {
     slug: "trash-and-watercolor",
     title: "Trash Pickup and Watercolor",
-    when: "Saturday, May 1 · 10:00 AM to 12:00 PM CDT",
+    when: "Saturday, May 1, 2027 · 10:00 AM to 12:00 PM CDT",
     place: TBA,
     summary: "Pick up trash together, then paint the place we just cleaned.",
     body: [
@@ -81,7 +94,7 @@ export const events: ClubEvent[] = [
   {
     slug: "microscope-party",
     title: "Microscope Party",
-    when: "Saturday, Jun 5 · 10:00 AM to 12:00 PM CDT",
+    when: "Saturday, Jun 5, 2027 · 10:00 AM to 12:00 PM CDT",
     place: { name: "Wheel Fun Rentals, Bde Maka Ska", address: "3000 E Bde Maka Ska Pkwy · Minneapolis, MN", url: "https://wheelfunrentals.com/mn/minneapolis/bde-maka-ska" },
     summary: "Kayak Bde Maka Ska, fill vials with lake water, then see what's living in it under the microscope.",
     body: [
@@ -94,7 +107,7 @@ export const events: ClubEvent[] = [
   {
     slug: "science-museum",
     title: "Field Trip to the Science Museum",
-    when: "Saturday, Jul 10 · 10:00 AM to 12:00 PM CDT",
+    when: "Saturday, Jul 10, 2027 · 10:00 AM to 12:00 PM CDT",
     place: { name: "Science Museum of Minnesota", address: "120 W Kellogg Blvd · Saint Paul, MN", url: "https://www.smm.org/" },
     summary: "A summer field trip to the Science Museum of Minnesota, sketchbooks in hand.",
     body: [
@@ -106,7 +119,7 @@ export const events: ClubEvent[] = [
   {
     slug: "byos",
     title: "BYOS: Bring Your Own Sciartist",
-    when: "Saturday, Aug 7 · 10:00 AM to 12:00 PM CDT",
+    when: "Saturday, Aug 7, 2027 · 10:00 AM to 12:00 PM CDT",
     place: TBA,
     summary: "Bring a scientist-artist you love and give a short show-and-tell about their work.",
     body: [
@@ -116,9 +129,21 @@ export const events: ClubEvent[] = [
     image: {"src": "/images/albinus-wandelaar-1749-clara.jpg", "alt": "An engraving of a human skeleton standing in front of a rhinoceros in a garden", "caption": "Jan Wandelaar, skeleton with Clara the rhinoceros, engraved by Charles Grignion for Bernhard Siegfried Albinus's <em>Tabulae sceleti et musculorum corporis humani</em> (1747; this plate from the 1749 English edition). Albinus was the anatomist, but the book is beautiful because of Wandelaar, the artist he hired, who put Europe's most famous rhinoceros behind the skeleton. The kind of sciartist we hope you'll bring. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Clara_Rhinoceros_from_Bernhard_Siegfried_Albinus_TAB_IV_-_1749.jpg"}
   },
   {
+    slug: "fungi-appreciation",
+    title: "Fungi Appreciation",
+    when: "Sunday, Aug 22, 2027 · 10:00 AM to 12:00 PM CDT",
+    place: TBA,
+    summary: "Head into the woods to find and draw mushrooms, shelf fungi, and slime molds.",
+    body: [
+      "Late summer is mushroom season. We'll walk slowly through the woods looking for fungi: mushrooms in the leaf litter, shelf fungi on fallen logs, and maybe a slime mold or two. Then we'll sit down and draw what we found.",
+      "Bring a sketchbook, and a hand lens if you have one. Look, draw, and photograph, but leave everything where it grows. Dress for bugs and mud.",
+    ],
+    image: {"src": "/images/haeckel-1904-basimycetes.jpg", "alt": "A plate of mushrooms on a black background, led by a veiled stinkhorn with a lacy white net hanging from its cap", "caption": "Ernst Haeckel, <em>Basimycetes</em>, from <em>Kunstformen der Natur</em> (1904). Stinkhorns, earthstars, and the veiled lady, whose lace skirt unfurls in a few hours and is gone by the next day. Fungi reward the people who walk slowly. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Haeckel_Basimycetes.jpg"},
+  },
+  {
     slug: "collaging-the-future",
     title: "Collaging the Future",
-    when: "Saturday, Sep 11 · 10:00 AM to 12:00 PM CDT",
+    when: "Saturday, Sep 11, 2027 · 10:00 AM to 12:00 PM CDT",
     place: TBA,
     summary: "Scissors, glue, and old science magazines: cut out the future you want to live in.",
     body: [
@@ -127,5 +152,29 @@ export const events: ClubEvent[] = [
       "Like Sci Art Zines & Coffee, we'll gather the collages into a Sci Art Club zine and order printed copies for anyone who wants one.",
     ],
     image: {"src": "/images/guidice-1975-space-colony.jpg", "alt": "A painting of the inside of a space colony: green hills, a winding lake, and farmland curving up overhead, with sunlight pouring in through long window strips", "caption": "Rick Guidice, interior of a space colony (1975), painted for NASA Ames Research Center's summer study of space settlements. Lakes, farms, and villages curving up and over your head, sunlight streaming in through long windows: a future someone took seriously enough to paint every field. Public domain (NASA).", "link": "https://commons.wikimedia.org/wiki/File:Artist-_Rick_Guidice_interior_of_Torus_wheel_(L-5)_Space_Colonization_Module_(ARC-1975-AC75-1086).jpg"}
+  },
+  {
+    slug: "da-vinci-notebook-pages",
+    title: "Da Vinci Notebook Pages",
+    when: "Saturday, Oct 2, 2027 · 10:00 AM to 12:00 PM CDT",
+    place: TBA,
+    summary: "Fill a notebook spread the way Leonardo did: drawings, cutaways, arrows, and questions in the margins.",
+    body: [
+      "Leonardo's notebooks hold everything at once: the flow of water, the muscles of the arm, machines that couldn't be built yet, shopping lists, and questions to himself, often written backward.",
+      "Pick one thing you're curious about, like a bicycle, a heron's wing, or an eddy in the river, and fill a two-page spread with it: drawings from different angles, cutaways, measurements, and the questions you'd still like answered. Mirror writing optional.",
+    ],
+    image: {"src": "/images/leonardo-c1510-water-old-man.jpg", "alt": "A pen-and-ink notebook page with a seated old man on the left and studies of swirling water on the right, above lines of mirror writing", "caption": "Leonardo da Vinci, a seated old man and studies of water (c. 1510 to 1513), pen and ink. A thinker on one half of the page and eddies of water on the other, with notes in his backward mirror script underneath: the whole notebook habit on one sheet. Royal Collection Trust, RCIN 912579. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_RCIN_912579,_Recto_Studies_of_water,_and_a_seated_old_man.jpg"},
+  },
+  {
+    slug: "specimen-swap",
+    title: "Specimen Swap",
+    when: "Saturday, Dec 4, 2027 · 10:00 AM to 12:00 PM CST",
+    place: TBA,
+    summary: "Bring an object from nature, trade it for someone else's, then draw it and write its museum label.",
+    body: [
+      "Bring one object from nature to give away: a shell, a seed pod, a rock, a pinecone, an empty wasp nest. We'll pile them on a table, and everyone goes home with someone else's.",
+      "Then we'll draw our new specimen and write a museum label for it: what it is, where it came from, and what we'd still like to know about it. Nothing alive, and nothing from a protected species (that includes wild bird feathers, which are illegal to keep in the US).",
+    ],
+    image: {"src": "/images/vincent-1715-cabinet.jpg", "alt": "An engraving of a long gallery lined with jars and cabinets of specimens, with visitors leaning over tables of open drawers", "caption": "Frontispiece to Levinus Vincent's <em>Wondertooneel der Natuur</em> (Theater of Nature's Wonders, 1706 to 1715). Vincent was a Haarlem silk merchant whose cabinet of shells, insects, and pickled creatures was famous enough that visitors came to pore over its drawers. Our collection will be smaller. Public domain.", "link": "https://commons.wikimedia.org/wiki/File:Vincent,_Levinus_(1715)_Wondertooneel_der_natuur_-Tome_1-_0030_frontispiece.jpg"},
   },
 ];
