@@ -19,7 +19,7 @@ export const GET: APIRoute = () => {
     "",
     "> A Minneapolis / St. Paul community for people who make art about science, and science that looks like art. Informal Saturday-morning meetups (10 AM to noon). No expertise needed, just curiosity.",
     "",
-    "Come draw, research, write, and make something about the world with us. Bring a question, a sketchbook, or scraps of science that intrigue you. You'll be in good company whether you're inspired by Robert Hooke or Ernst Haeckel, Santiago Ramón y Cajal or Rachel Carson, Leonardo da Vinci or W.E.B. Du Bois.",
+    "Come draw, research, write, and make something about the world with us. Bring a question, a sketchbook, or scraps of science that intrigue you. You'll be in good company whether you're inspired by Robert Hooke or Kim Stanley Robinson, Santiago Ramón y Cajal or Rachel Carson, Leonardo da Vinci or W.E.B. Du Bois, Mary Oliver or Robin Wall Kimmerer.",
     "",
     "What to expect: hands-on creative workshops, show-and-tells, skill swaps, and science fairs.",
     "",
